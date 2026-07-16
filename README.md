@@ -2,6 +2,10 @@
 
 `EigenKache` is a KV-cache compression project for long-context transformer inference.
 
+**Recruiter scan:** AI infrastructure intern, ML systems intern, GPU/CUDA systems intern, Member of Technical Staff intern target. This repo shows LLM inference optimization, KV-cache memory pressure, CUDA-oriented systems design, benchmark engineering, and a concrete systems question: how do you preserve useful long-range context when decode-time memory is the bottleneck?
+
+**Proof in one line:** EigenKache keeps attention sinks and the hot decode tail exact, compresses the cold middle into attention-conditioned landmarks, and measures the memory/quality/runtime tradeoff against eviction-style baselines.
+
 The project takes a different stance from eviction-heavy and tiering-heavy systems:
 
 - keep attention sink tokens exact
