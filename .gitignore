@@ -11,3 +11,5 @@ venv/
 .mypy_cache/
 graphify-out/
 docs/paper/*.pdf
+.Rhistory
+.vscode/
