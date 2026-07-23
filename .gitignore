@@ -10,3 +10,4 @@ dist/
 venv/
 .mypy_cache/
 graphify-out/
+docs/paper/*.pdf

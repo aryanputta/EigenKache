@@ -1,0 +1,38 @@
+% EigenKache first-paper scaffold. Replace every TODO with measured evidence.
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,booktabs,graphicx,hyperref}
+\title{EigenKache: Attention-Conditioned Landmark Compression for Memory-Bounded Long-Context Decoding}
+\author{Aryan Putta}
+\date{\today}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\textbf{TODO:} State the memory problem, method, evaluation, main measured result, and limitation in 150--200 words. Do not include an unsupported claim.
+\end{abstract}
+
+\section{Introduction}
+\textbf{TODO:} Explain why long-context decoding creates KV-cache pressure. End with the research question and three contributions.
+
+\section{Background and Related Work}
+\textbf{TODO:} Explain attention, KV caching, FlashAttention's IO perspective, paging, eviction, and compression. Compare methods by what they preserve and what they cost.
+
+\section{Method}
+\textbf{TODO:} Define sink tokens, hot tail, cold middle, attention-conditioned segments, weighted landmarks, and the token budget. Include pseudocode and a diagram.
+
+\section{Experimental Setup}
+\textbf{TODO:} Document model, traces, datasets, hardware, software versions, seeds, budgets, baselines, and metrics so another person can reproduce the tables.
+
+\section{Results}
+\textbf{TODO:} Report quality/error versus budget, memory savings, policy overhead, and GPU runtime only when measured on GPU hardware.
+
+\section{Ablations and Limitations}
+\textbf{TODO:} Vary sink/tail sizes, segment count, head behavior, sequence length, and workload. State what the current evidence cannot establish.
+
+\section{Conclusion}
+\textbf{TODO:} Answer the research question narrowly and identify the next experiment.
+
+\bibliographystyle{plain}
+% TODO: add primary papers and official dataset/model citations.
+\end{document}
