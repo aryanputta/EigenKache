@@ -168,7 +168,7 @@ These traces should come from real model runs on LongBench or PG19, not syntheti
 ## Quick Start
 
 ```bash
-cd /Users/srini/EigenKache
+cd EigenKache
 python3 -m unittest discover -s tests
 python3 scripts/check_cuda_env.py
 sh scripts/test_cuda_kernels.sh
