@@ -75,19 +75,9 @@ The claim here is narrower and sharper:
 
 > Under the same token budget, attention-conditioned landmark compression can preserve more useful context than pure eviction baselines.
 
-## Research Base From Brain
+## Research Basis
 
-- `[[Source: Attention Is All You Need]]` for the attention mechanism itself
-- `[[Source: flastattention]]` for IO-aware attention cost on GPU
-- `[[Source: memeory mangement]]` and `[[Source: vLLM paper]]` for KV layout and paging
-- `[[Source: LayerKV]]` for memory pressure as a budget allocation problem
-- `[[Source: FlowKV]]` and `[[Source: KVDirect]]` for disaggregated serving pressure
-- `[[Source: AdaSkip Adaptive Sublayer Skipping for Accelerating Long-Context LLM Inference]]`
-- `[[Source: What Layers When Learning to Skip Compute in LLMs with Residual Gates]]`
-- `[[Source: DNN model copression]]` for structured tensor compression instead of arbitrary sparsity
-- `[[Source: cross opertator optimzation]]` for attention dataflow, tiling, buffer management, and exhaustive design-space pruning
-- `[[Source: neural network accelerator]]` for computation reordering and avoiding unnecessary transfers
-- `[[Source: vison langauge modles]]` for training-free attention-guided inference signals
+The design is informed by attention IO costs, paged KV management, cache retention and eviction, disaggregated inference, and structured tensor compression. The public paper source and citations are maintained under `docs/paper/`; the README only states the project’s reproducible design boundary.
 
 ## Datasets
 
