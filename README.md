@@ -145,6 +145,16 @@ This repo now includes actual CUDA kernel sources and a build/test script, but t
 
 So the CPU reference path is implemented now, and the CUDA kernel path is present but cannot be compiled or executed here.
 
+## Figures
+
+The paper figure is generated from the committed benchmark values with a portable Matplotlib script:
+
+```bash
+python3 scripts/make_paper_figure.py
+```
+
+It writes `docs/paper/figs/regimes.pdf`. The script uses a non-interactive backend and does not require a machine-specific `paper-kit` installation.
+
 ## Layout
 
 ```text
