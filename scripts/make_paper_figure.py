@@ -10,17 +10,15 @@ like a default matplotlib plot.
 
 from __future__ import annotations
 
-import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path.home() / "paper-kit"))
-import paperstyle  # noqa: E402
+import matplotlib
 
-paperstyle.use()
-import matplotlib.pyplot as plt  # noqa: E402
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).resolve().parents[1]
-P = paperstyle.PALETTE
+P = {"grey": "#7f8c8d", "rust": "#b3402f", "blue": "#2b6cb0"}
 
 RETAINED = [25, 33, 50]
 RANDOM = {
@@ -78,7 +76,10 @@ def main():
                bbox_to_anchor=(0.5, -0.02), frameon=False, fontsize=8,
                columnspacing=1.4, handletextpad=0.4)
     fig.subplots_adjust(bottom=0.30, wspace=0.08)
-    paperstyle.save(fig, ROOT / "docs" / "paper" / "figs" / "regimes.pdf")
+    output = ROOT / "docs" / "paper" / "figs" / "regimes.pdf"
+    output.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(output, bbox_inches="tight")
+    print(f"wrote {output}")
 
 
 if __name__ == "__main__":
