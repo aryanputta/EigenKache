@@ -6,6 +6,9 @@
 
 **Proof in one line:** EigenKache keeps attention sinks and the hot decode tail exact, compresses the cold middle into attention-conditioned landmarks, and measures the memory/quality/runtime tradeoff against eviction-style baselines.
 
+
+Project overview: https://aryanputta.com/projects#p3 · KV-cache article: https://aryanputta.com/blog/kv-cache-memory-wall
+
 The project takes a different stance from eviction-heavy and tiering-heavy systems:
 
 - keep attention sink tokens exact
