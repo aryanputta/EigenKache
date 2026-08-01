@@ -4,8 +4,7 @@ One claim: landmark compression beats eviction only when the cold region is
 redundant. Left (i.i.d. random) -> eviction wins; right (structured, low-rank)
 -> landmark wins. Values are the committed benchmark results (Tables 1-2).
 
-Rendered in the paper's serif font via paper-kit/paperstyle so it does not look
-like a default matplotlib plot.
+Rendered as a publication-ready Matplotlib figure with a consistent project palette.
 """
 
 from __future__ import annotations
